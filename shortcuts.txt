@@ -17,3 +17,6 @@ intitle, inauthor, inpublisher, isbn
 optional:
 q=printType=all/books/magazines
 https://www.googleapis.com/books/v1/volumes?q=time&printType=magazines
+^
+pagination - search index
+startIndex=0, maxResults=10~40

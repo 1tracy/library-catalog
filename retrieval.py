@@ -24,22 +24,23 @@ def id_retrieve(bookid):
         return unfiltered
     return "error"
 
-def search(customised, sliced=10):
-    """ search and return 10 most relevant results **can be modified"""
+def general_search(customised):
+    """ search and return <=10 most relevant results **can be modified"""
     url = "https://www.googleapis.com/books/v1/volumes?q="+customised
     if test_connection(url):
         response = getrequest(url)
         unfiltered = json.loads(response.content)
         lst = []
-        for i in range(sliced):
-            lst.append(unfiltered['items'][i]['volumeInfo'])
+        for i in unfiltered['items']:
+            lst.append(i['volumeInfo'])
         return lst
     return "error"
+
 
 def main():
     """ testing functions :) """
     id_retrieve('buc0AAAAMAAJ')
-    search('flowers')
+    general_search('flowers')
 
 if __name__ == "__main__":
     main()
