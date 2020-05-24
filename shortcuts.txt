@@ -1,0 +1,5 @@
+searching terms:
+request1 = requests.get("https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes")
+
+searching by id:
+https://www.googleapis.com/books/v1/volumes?q=id=BookID
