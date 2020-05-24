@@ -20,7 +20,7 @@ def id_retrieve(bookid):
     url = "https://www.googleapis.com/books/v1/volumes?q=id="+bookid
     if test_connection(url):
         response = getrequest(url)
-        unfiltered = json.loads(response.content)['items'][0]['volumeInfo']
+        unfiltered = json.loads(response.content)['items'][0]
         return unfiltered
     return "error"
 
@@ -32,15 +32,15 @@ def general_search(customised):
         unfiltered = json.loads(response.content)
         lst = []
         for i in unfiltered['items']:
-            lst.append(i['volumeInfo'])
+            lst.append([i['id'], i['volumeInfo']])
         return lst
     return "error"
 
 
 def main():
     """ testing functions :) """
-    id_retrieve('buc0AAAAMAAJ')
-    general_search('flowers')
+    print(id_retrieve('Hc3itAEACAAJ'))
+    print(general_search('flowers'))
 
 if __name__ == "__main__":
     main()
