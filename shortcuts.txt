@@ -3,3 +3,6 @@ request1 = requests.get("https://www.googleapis.com/books/v1/volumes?q=flowers+i
 
 searching by id:
 https://www.googleapis.com/books/v1/volumes?q=id=BookID
+
+write all data to a csv !!
+in another py file
