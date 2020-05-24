@@ -8,6 +8,7 @@ write all data to a csv !!
 in another py file
 - use tkinter to format data
 
+>> use tkinter interface to come up with custom url to use in retrieval.py
 q=term+inauthor:author
 def search
 general search: q=terms
@@ -15,3 +16,4 @@ other types:
 intitle, inauthor, inpublisher, isbn
 optional:
 q=printType=all/books/magazines
+https://www.googleapis.com/books/v1/volumes?q=time&printType=magazines
