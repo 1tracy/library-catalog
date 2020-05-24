@@ -6,3 +6,12 @@ https://www.googleapis.com/books/v1/volumes?q=id=BookID
 
 write all data to a csv !!
 in another py file
+- use tkinter to format data
+
+q=term+inauthor:author
+def search
+general search: q=terms
+other types:
+intitle, inauthor, inpublisher, isbn
+optional:
+q=printType=all/books/magazines

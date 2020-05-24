@@ -16,13 +16,14 @@ def test_connection(url):
     request = getrequest(url)
     return request.status_code == 200
 
-def id_retrieve(BookID):
-    """ retrieve first google book result """
+def id_retrieve(BookID): #finished
+    """ retrieve and return first google book result data"""
     url = "https://www.googleapis.com/books/v1/volumes?q=id="+BookID
     response = getrequest(url)
-    print(json.loads(response.content)['items'][0])
+    unfiltered = json.loads(response.content)['items'][0]['volumeInfo']
+    return unfiltered
 
-def search(term):
+def search(term, type):
     """ search and return first 10 results """
     pass
 
