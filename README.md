@@ -3,10 +3,10 @@ Library catalog uses the Google Books API to withdraw real time, accurate inform
 
 # Interface and Sample Responses
 Main Interface
-![Main Interface](https://github.com/1tracy/library-catalog/tree/master/MainApplication.png?raw=true)
+![Main Interface](https://github.com/1tracy/library-catalog/blob/master/images/MainApplication.png)
 
 Favorites Interface
-![Favorites Interface](https://github.com/1tracy/library-catalog/tree/master/FavoritesFrame.png?raw=true)
+![Favorites Interface](https://github.com/1tracy/library-catalog/blob/master/images/FavoritesFrame.png)
 
 Search Interface
-![Search Interface](https://github.com/1tracy/library-catalog/tree/master/SearchFrame.png?raw=true)
+![Search Interface](https://github.com/1tracy/library-catalog/blob/master/images/SearchFrame.png)
