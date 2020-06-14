@@ -10,7 +10,7 @@ def getrequest(url):
     response = requests.get(url)
     return response
 
-def test_connection(url):
+def test_connection(url="https://www.googleapis.com/books/v1/volumes?q=Hc3itAEACAAJ"):
     """ test if connection is working """
     request = getrequest(url)
     return request.status_code == 200
@@ -39,8 +39,8 @@ def general_search(customised):
 
 def main():
     """ testing functions :) """
-    print(id_retrieve('Hc3itAEACAAJ'))
-    print(general_search('flowers'))
+    print(id_retrieve('Hc3itAEACAAJ')['volumeInfo']['title'])
+    #print(general_search('flowers'))
 
 if __name__ == "__main__":
     main()
