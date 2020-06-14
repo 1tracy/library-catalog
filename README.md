@@ -1,2 +1,6 @@
 # library-catalog
-Create a book class with a title, page count, ISBN and whether or not it is checked out or not. Manage a collection of various books and allow the user to check out books or return books. For added complexity generate a report of those books overdue and any fees. Also allow users to put books on reserve.
+Library catalog is a demonstration of my Python skillset. I used the Google Books API to withdraw real time, accurate information about specific book statistics (title, summary, page count, ISBN, etc.). I used the Tkinter library to create a basic interface in which you can browse the selection of books.
+
+Libraries Used:
+- Tkinter
+- Requests
