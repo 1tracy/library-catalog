@@ -214,6 +214,7 @@ class FavoriteFrame(tk.Frame):
                 try: self.descVar.set(id_retrieve(self.idlist[self.pagers])['volumeInfo']['description'])
                 except KeyError:
                     self.descVar.set("No Description Provided")
+                
 
     def remove_from_favorites(self):
         """ remove from favorites """
