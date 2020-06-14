@@ -1,8 +1,6 @@
 """ main library module """
 import csv
 import datetime
-import tkinter
-from tkinter import *
 
 from retrieval import general_search
 from retrieval import id_retrieve
@@ -57,13 +55,6 @@ def sortdata(lst):
             'id': lst[0]}
     return temp
 
-##TKINTER CODE BELOW
-window = tkinter.Tk()
-window.title("Library Catalogue")
-window.geometry("1000x600")
-testLabel = Label(window, text='test', fg='black', bg='white').pack()
-
-
 ##TEST CODE
 def testcodes():
     """ testing code """
@@ -80,4 +71,3 @@ def testcodes():
     tracy.return_book(0)
     #print('borrowed', tracy.borrowed())
 
-window.mainloop()
